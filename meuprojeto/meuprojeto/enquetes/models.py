@@ -1,8 +1,6 @@
 from django.db import models
 
-class Enquete(object):
-    def __init__(self, texto = '', data = '', id = 0):
-        self.texto = texto
-        self.data = data
-        self.id = id
+class Enquete(models.Model):
+    texto = models.CharField(max_length=150)
+    data_publicacao = models.DateField()
 # Create your models here.

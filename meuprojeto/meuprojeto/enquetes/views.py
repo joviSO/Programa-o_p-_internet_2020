@@ -4,7 +4,7 @@ from enquetes.models import Enquete
 def bemvindo(request):
     return render(request, 'index.html')
 
-def exibir(request,enquete_id):
+def enquete(request,enquete_id):
     enquete = Enquete()
     if enquete_id == 1:
         enquete = Enquete('A vida é que em rapadura é doce mas, não é mole não', '21:10 27/08/2020')
